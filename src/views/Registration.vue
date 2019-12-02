@@ -14,10 +14,12 @@
                 <div class="buttons">
                     <button class="buttons-btn">Sign Up</button>
                 </div>
+
+                <div class="text-bottom">
+                    <span>Thank you for Registration</span>
+                </div>
             </div>
-            <div class="text-bottom">
-                <span>Thank you for Registration</span>
-            </div>
+
         </div>
     </div>
 </template>

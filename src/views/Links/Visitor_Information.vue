@@ -1,18 +1,18 @@
 <template>
-    <div class="visitor">
+    <div class="movein-moveout">
         <p class="vtitle">Visitor Information:</p>
-        <div class="vinputs">
-            <div class="visitor-title">
+        <div class="unit-information">
+            <div class="upload">
                 <p>Visitor Name:</p>
-                <div class="vpicker-dialog">
+                <div class="picker-dialog">
                     <div>
                         <input type="text" placeholder="Visitor Name" >
                     </div>
                 </div>
             </div>
-            <div class="visitor-title">
+            <div class="upload">
                 <p>Arrival date:</p>
-                <div class="vpicker-dialog">
+                <div class="picker-dialog">
                     <div>
                         <img src="../../assets/icons/calendar.svg">
                         <div>
@@ -22,33 +22,33 @@
                     </div>
                 </div>
             </div>
-            <div class="visitor-title">
+            <div class="upload">
                 <p>Expected Visit Duration:</p>
-                <div class="vpicker-dialog">
+                <div class="picker-dialog">
                     <div>
                         <input type="text" placeholder="Expected Visit Duration" >
                     </div>
                 </div>
             </div>
-            <div class="visitor-title">
+            <div class="upload">
                 <p>Car Model:</p>
-                <div class="vpicker-dialog">
+                <div class="picker-dialog">
                     <div>
                         <input type="text" placeholder="Car Model" >
                     </div>
                 </div>
             </div>
-            <div class="visitor-title">
+            <div class="upload">
                 <p>Car Colour:</p>
-                <div class="vpicker-dialog">
+                <div class="picker-dialog">
                     <div>
                         <input type="text" placeholder="Car Colour" >
                     </div>
                 </div>
             </div>
-            <div class="visitor-title">
+            <div class="upload">
                 <p>Attachment 1:</p>
-                <div class="vpicker-dialog">
+                <div class="picker-dialog">
                     <div>
                         <img src="../../assets/icons/paperclip.svg">
                         <div>
@@ -57,9 +57,9 @@
                     </div>
                 </div>
             </div>
-            <div class="visitor-title">
+            <div class="upload">
                 <p>Attachment 2:</p>
-                <div class="vpicker-dialog">
+                <div class="picker-dialog">
                     <div>
                         <img src="../../assets/icons/paperclip.svg">
                         <div>

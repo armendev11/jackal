@@ -17,11 +17,13 @@
                     <button class="buttons-btn" @click="login">LogIn</button>
                     <span class="fg-password" @click="forgot_password"><a href="javascript:void (0)">Forgot Password ?</a></span>
                 </div>
+
+                <div class="text-bottom">
+                    <span>Don’t have an account?</span>
+                    <span @click="sign_up"><a href="javascript:void (0)">Sign Up</a></span>
+                </div>
             </div>
-            <div class="text-bottom">
-                <span>Don’t have an account?</span>
-                <span @click="sign_up"><a href="javascript:void (0)">Sign Up</a></span>
-            </div>
+
         </div>
     </div>
 </template>
