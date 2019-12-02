@@ -1,0 +1,204 @@
+$header-max: 1200px;
+$header-mid: 996px;
+$header-mid2: 768px;
+$header-min: 568px;
+.header{
+  position: relative;
+  .container {
+    @media screen and (max-width: $header-mid){
+      max-width: 900px;
+      width: 100%;
+      padding: 0;
+    }
+    .header-container-top {
+      display: flex;
+      justify-content: space-between;
+      height: 85px;
+      box-sizing: border-box;
+      padding: 5px;
+      align-items: center;
+      .header-logo {
+        width: 210px;
+        height: 67px;
+        @media screen and (max-width: $header-mid){
+          width: 150px;
+          height: 50px;
+        }
+        @media screen and (max-width: $header-min){
+          width: 130px;
+          height: 45px;
+          padding: 0;
+        }
+      }
+      .header-background-top-content {
+        display: flex;
+        align-items: center;
+        max-width: 700px;
+        width: 100%;
+        justify-content: space-between;
+        @media screen and (max-width: $header-mid2) {
+          justify-content: flex-end;
+        }
+        .appointment {
+          width: 156px;
+          height: 43px;
+          background-color: #783db3;
+          border: none;
+          cursor: pointer;
+          color: white;
+          border-radius: 15px;
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: bold;
+          font-size: 16px;
+          outline: none;
+          box-sizing: border-box;
+          @media screen and (max-width: $header-mid){
+            max-width: 130px;
+            width: 100%;
+            height: 40px;
+          }
+        }
+        .header-background-top-content-inner {
+          display: flex;
+          align-items: center;
+          .header-location, .header-message {
+            display: flex;
+            align-items: center;
+            .header-location-text {
+              max-width: 210px;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              font-family: 'Nunito Sans', sans-serif;
+              font-size: 16px;
+              color: #575757;
+              letter-spacing: 0.4px;
+              line-height: 1.5;
+              @media screen and (max-width: $header-mid2){
+                display: none;
+              }
+            }
+            .header-location-text1{
+              max-width: 210px;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              font-family: 'Nunito Sans', sans-serif;
+              font-size: 16px;
+              color: #575757;
+              letter-spacing: 0.4px;
+              line-height: 1.5;
+              @media screen and (max-width: $header-mid2){
+                display: none;
+              }
+            }
+            .header-location-text span:nth-child(1),  .header-location-text1 span:nth-child(1) {
+              font-weight: bold;
+            }
+            .header-icon {
+              fill: #3cb0f6;
+              margin: 5px;
+            }
+          }
+          .header-message {
+            margin-left: 40px;
+            @media screen and (max-width: $header-mid){
+              margin-left: 10px;
+            }
+            @media screen and (max-width: $header-min){
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .header-icon {
+      width: 33px;
+    }
+    .header-container-bottom {
+      width: 100%;
+      height: 51px;
+      background-color: #3cb0f6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      @media screen and (max-width: $header-mid2){
+        align-items: normal;
+      }
+      .navbar-toggler-icon img{
+        width: 40px;
+        height: 30px;
+      }
+      .navbar-toggler{
+        padding: 2px 0 10px 0;
+        outline: none;
+      }
+      #collapsibleNavbar{
+        background-color: #3cb0f6;
+        width: 60px;
+        margin-left: -17px;
+      }
+      .header-container-bottom-login ul {
+        list-style-type: none;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        margin: 0;
+        @media screen and (max-width: $header-mid2){
+          height: 100%;
+          margin: auto;
+        }
+        li {
+          padding: 0 12px;
+        }
+        .line{
+          width: 2px;
+          height: 16px;
+          background-color: #fff;
+        }
+        li img {
+          width: 14px;
+          height: 16px;
+          margin-right: 5px;
+        }
+        li a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+      .header-container-bottom-inner {
+        .header-container-bottom-inner-ul {
+          list-style-type: none;
+          display: flex;
+          box-sizing: border-box;
+          align-items: center;
+          margin: 0;
+          .nav-link{
+            text-decoration: none;
+            cursor: pointer;
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.5;
+            letter-spacing: 0.4px;
+            color: #fff;
+            border-bottom: 5px solid transparent;
+            text-transform: uppercase;
+            transition: all 0.25s;
+            @media screen and (max-width: $header-max) {
+              padding: 0;
+            }
+            @media screen and (max-width: $header-mid){
+              margin: 0 10px;
+            }
+          }
+          .nav-link:hover {
+            border-bottom: 5px solid #2393d5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+$section5-max: 1200px;
+$section5-mid: 996px;
+$section5-min: 568px;
+
+.container{
+  @media screen and (max-width: $section5-mid){
+    max-width: 996px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section5-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:125px;
+    p:nth-child(1){
+      font-family: 'Exo', sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.9px;
+      text-align: left;
+      color: #2b2c2c;
+      text-transform: uppercase;
+      @media screen and (max-width: $section5-min){
+        text-align: center;
+      }
+    }
+    p:nth-child(2){
+      position: relative;
+      font-family: 'Exo', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #343333;
+      text-transform: uppercase;
+      &:after{
+        content: "";
+        position: absolute;
+        width: 122px;
+        height: 1px;
+        background-color: #a3a3a3;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: -130px;
+        @media screen and (max-width: $section5-min){
+          width: 70px;
+          right: -72px;
+        }
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        width: 122px;
+        height: 1px;
+        background-color: #a3a3a3;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: -130px;
+        @media screen and (max-width: $section5-min){
+          width: 70px;
+          left: -70px;
+        }
+      }
+    }
+  }
+  .section5-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 45px;
+    @media screen and (max-width: $section5-min){
+      margin: 0;
+    }
+    ul{
+      list-style-type: none;
+      display: flex;
+      width: 80%;
+      align-items: center;
+      justify-content: space-around;
+      @media screen and (max-width: $section5-max){
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      li{
+        padding: 17px 23px;
+        cursor: pointer;
+        border: solid 2px transparent;
+        transition: all 0.25s;
+        &:hover{
+          border: solid 2px #51af33;
+        }
+        a{
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: 'NunitoSans', sans-serif;
+          font-size: 16px;
+          font-weight: normal;
+          text-align: left;
+          color: #2d2d2d;
+        }
+      }
+    }
+  }
+  .section5-images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    div{
+      width: 30%;
+      min-width: 280px;
+      height: 250px;
+      background-repeat: no-repeat;
+      margin: 15px;
+      cursor: pointer;
+      transition: all .25s;
+      &:hover .img-hover{
+        opacity: 1;
+      }
+      .img-hover{
+        opacity: 0;
+        width: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,.5);
+        .img-text{
+          font-family: 'Exo', sans-serif;
+          font-size: 25px;
+          font-weight: bold;
+          text-align: left;
+          color: #ffffff;
+        }
+        .img-button{
+          width: 101px;
+          height: 36px;
+          background-color: #3cb0f6;
+          border: none;
+          outline: none;
+          cursor:pointer;
+          border-radius: 5px;
+          color: #fff;
+        }
+      }
+    }
+    .img1{
+      background-image: url("../images/img1.png");
+    }
+    .img2{
+      background-image: url("../images/img2.png");
+    }
+    .img3{
+      background-image: url("../images/img3.png");
+    }
+    .img4{
+      background-image: url("../images/img4.png");
+    }
+    .img5{
+      background-image: url("../images/img5.png");
+    }
+    .img6{
+      background-image: url("../images/img6.png");
+    }
+  }
+}
