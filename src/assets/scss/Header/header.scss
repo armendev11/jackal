@@ -127,20 +127,28 @@ $header-min: 568px;
       @media screen and (max-width: $header-mid2){
         align-items: normal;
       }
-      .navbar-toggler-icon img{
-        width: 40px;
-        height: 30px;
+      .bg-info{
+        background-color: transparent !important;
+      }
+      .navbar-toggler-icon{
+        background: none;
+        img{
+          width: 40px;
+          height: 30px;
+          margin-left: -5px;
+        }
       }
       .navbar-toggler{
         padding: 2px 0 10px 0;
         outline: none;
+        border: none;
       }
-      #collapsibleNavbar{
+      #nav-collapse{
         background-color: #3cb0f6;
         width: 60px;
-        margin-left: -17px;
+        margin-left: -15px;
       }
-      .header-container-bottom-login ul {
+      .header-container-bottom-login-ul {
         list-style-type: none;
         display: flex;
         box-sizing: border-box;
@@ -150,7 +158,7 @@ $header-min: 568px;
           height: 100%;
           margin: auto;
         }
-        li {
+        li:nth-of-type(2) {
           padding: 0 12px;
         }
         .line{
@@ -158,10 +166,16 @@ $header-min: 568px;
           height: 16px;
           background-color: #fff;
         }
-        li img {
-          width: 14px;
-          height: 16px;
-          margin-right: 5px;
+        li:nth-of-type(1) {
+          display: flex;
+          align-items: center;
+          img{
+            width: 14px;
+            height: 16px;
+          }
+          a{
+            padding: 0 10px;
+          }
         }
         li a {
           color: #fff;
@@ -175,6 +189,7 @@ $header-min: 568px;
           box-sizing: border-box;
           align-items: center;
           margin: 0;
+          .nav-item{margin-top: 5px}
           .nav-link{
             text-decoration: none;
             cursor: pointer;

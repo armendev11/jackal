@@ -29,28 +29,27 @@
                     </div>
                 </div>
                 <div class="header-container-bottom">
-                    <nav class="navbar navbar-expand-md">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"><img src="../../assets/icons/menu-button-of-three-horizontal-lines.svg" alt=""></span>
-                        </button>
-                        <div id="collapsibleNavbar" class="header-container-bottom-inner collapse navbar-collapse">
-                            <ul class="header-container-bottom-inner-ul navbar-nav">
-                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Elements</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Package</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+                        <b-navbar toggleable="md"  variant="info">
+                            <b-navbar-toggle target="nav-collapse"><span class="navbar-toggler-icon"><img src="../../assets/icons/menu-button-of-three-horizontal-lines.svg" alt=""></span></b-navbar-toggle>
+                            <b-collapse id="nav-collapse" class="header-container-bottom-inner" is-nav>
+                                <b-navbar-nav class="header-container-bottom-inner-ul">
+                                    <b-nav-item href="#" >Home</b-nav-item>
+                                    <b-nav-item href="#" >About</b-nav-item>
+                                    <b-nav-item href="#" >Services</b-nav-item>
+                                    <b-nav-item href="#" >Elements</b-nav-item>
+                                    <b-nav-item href="#" >Package</b-nav-item>
+                                    <b-nav-item href="#" >Contact</b-nav-item>
+                                </b-navbar-nav>
+                            </b-collapse>
+                        </b-navbar>
                     <div class="header-container-bottom-login">
-                        <ul>
-                            <li @click="login">
+                        <ul class="header-container-bottom-login-ul">
+                            <li @click="login" class="nav-item">
                                 <img class="user-icon" src="@/assets/icons/user.svg" alt="">
-                                <span><a href="javascript:void(0)">Sign In</a></span>
+                                <span><a class="nav-link" href="javascript:void(0)">Sign In</a></span>
                             </li>
                             <div class="line"></div>
-                            <li @click="sign_up"><a href="javascript:void (0)">Register</a></li>
+                            <li class="nav-link" @click="sign_up"><a href="javascript:void (0)">Register</a></li>
                         </ul>
                     </div>
                 </div>
