@@ -7,8 +7,8 @@ $visitor-max: 750px;
     font-weight: bolder;
     font-family: "OpenSans", sans-serif;
   }
-  .vinputs{
-    .visitor-title{
+
+    .unit-information{
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
@@ -22,7 +22,7 @@ $visitor-max: 750px;
         font-size: 18px;
         margin: 0
       }
-      .vpicker-dialog{
+      .picker-dialog{
         max-width: 600px;
         width: 100%;
         display: flex;
@@ -63,5 +63,4 @@ $visitor-max: 750px;
         }
       }
     }
-  }
 }

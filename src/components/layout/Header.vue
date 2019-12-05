@@ -33,12 +33,12 @@
                             <b-navbar-toggle target="nav-collapse"><span class="navbar-toggler-icon"><img src="../../assets/icons/menu-button-of-three-horizontal-lines.svg" alt=""></span></b-navbar-toggle>
                             <b-collapse id="nav-collapse" class="header-container-bottom-inner" is-nav>
                                 <b-navbar-nav class="header-container-bottom-inner-ul">
-                                    <b-nav-item href="#" >Home</b-nav-item>
-                                    <b-nav-item href="#" >About</b-nav-item>
-                                    <b-nav-item href="#" >Services</b-nav-item>
-                                    <b-nav-item href="#" >Elements</b-nav-item>
-                                    <b-nav-item href="#" >Package</b-nav-item>
-                                    <b-nav-item href="#" >Contact</b-nav-item>
+                                    <b-nav-item href="#">Home</b-nav-item>
+                                    <b-nav-item href="#">About</b-nav-item>
+                                    <b-nav-item href="#">Services</b-nav-item>
+                                    <b-nav-item href="#">Elements</b-nav-item>
+                                    <b-nav-item href="#">Package</b-nav-item>
+                                    <b-nav-item href="#">Contact</b-nav-item>
                                 </b-navbar-nav>
                             </b-collapse>
                         </b-navbar>
